@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jornal Santuário da Trindade — Vox Ecclesiae</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-banner"><div class="banner-slices"><img src="../assets/banner_vox_1.webp" alt="Vox Ecclesiae"><img src="../assets/banner_vox_2.webp" alt=""><img src="../assets/banner_vox_3.webp" alt=""><img src="../assets/banner_vox_4.webp" alt=""><img src="../assets/banner_vox_5.webp" alt=""></div></header>
+<nav class="topnav">
+  <a class="home-link" href="../index.html">⌂</a>
+  <a href="../index.html">Início</a><a href="../jornais.html">Jornais</a><a href="../colecoes.html">Coleções</a>
+  <a href="../como-pesquisar.html">Como pesquisar</a><a href="../como-citar.html">Como citar</a><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a>
+</nav>
+<main class="page-shell">
+  <p><a class="back-link" href="santuario-da-trindade.html">← Voltar ao Jornal Santuário da Trindade</a></p>
+  <div class="section-title"><span class="orn">◇</span><h1 id="yearTitle">Jornal Santuário da Trindade</h1><span class="orn">◇</span></div>
+  <p id="yearLead" class="lead">Carregando o acervo do ano...</p>
+  <div id="yearStats" class="archive-stats"></div>
+  <div id="yearStatus" class="search-status">Carregando edições e páginas OCR...</div>
+  <section id="editionGrid" class="edition-grid"></section>
+  <div id="yearFallback" class="callout hidden"></div>
+</main>
+<footer><div class="footer-inner"><div class="footer-title"><strong>VOX ECCLESIAE</strong><small>Hemeroteca Digital da Imprensa Católica de Goiás</small></div><div class="footer-logo"><img src="../assets/laprem/laprem-logo-horizontal.webp" alt="LAPREM"></div><div class="footer-contacts"><a href="https://www.lapremueg.com/">◉ www.lapremueg.com</a><a href="mailto:laprem.ppghis@ueg.br">✉ laprem.ppghis@ueg.br</a><a href="https://www.instagram.com/laprem.ueg/">◎ @laprem.ueg</a></div><div class="footer-copy">© 2026 LAPREM</div></div></footer>
+
+<dialog id="readerDialog" class="archive-reader">
+  <div class="reader-head"><strong id="readerTitle">Leitor</strong><button id="readerClose" type="button">Fechar</button></div>
+  <div class="reader-tabs">
+    <button id="tabPdf" class="reader-tab active" type="button">Jornal</button>
+    <button id="tabOcr" class="reader-tab" type="button">Texto OCR</button>
+    <button id="copyOcr" class="reader-copy hidden" type="button">Copiar texto</button>
+  </div>
+  <div id="pdfPane" class="reader-pane"><iframe id="pdfFrame" title="Leitor do jornal"></iframe></div>
+  <div id="ocrPane" class="reader-pane hidden"><div id="ocrText" class="ocr-text"></div></div>
+</dialog>
+<script src="../assets/app.js"></script>
+<script src="../assets/jst-ano.js"></script>
+</body>
+</html>
