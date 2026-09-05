@@ -18,11 +18,11 @@
     "masthead":"assets/mastheads/brasil-central.png",
     "tipo":"Jornal",
     "subtitulo":"Imprensa católica goiana",
-    "inicio":null,
-    "fim":null,
-    "edicoes":0,
-    "descricao":"Coleção em fase de catalogação e preparação documental.",
-    "status":"catalogando",
+    "inicio":1937,
+    "fim":1957,
+    "edicoes":53,
+    "descricao":"Catálogo documental publicado com 53 edições deduplicadas. PDFs, TXT e JSON serão liberados edição por edição quando os arquivos digitais tiverem endereço verificado.",
+    "status":"catalogo",
     "url":"jornais/brasil-central.html"
   },
   {
