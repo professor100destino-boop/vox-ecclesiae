@@ -1,17 +1,52 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jornal Brasil Central — coleção do Vox Ecclesiae."><title>Jornal Brasil Central — Vox Ecclesiae</title><link rel="stylesheet" href="../assets/style.css"></head><body>
-<header class="site-banner"><img src="../assets/banner_vox_ecclesiae.png" alt="Vox Ecclesiae"></header><nav class="topnav"><a class="home-link" href="../index.html">⌂</a><a href="../index.html">Início</a><a href="../jornais.html">Jornais</a><a href="../colecoes.html">Coleções</a><a href="../como-pesquisar.html">Como pesquisar</a><a href="../como-citar.html">Como citar</a><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a></nav>
-<main class="page-shell construction-page">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jornal Brasil Central — coleção digital do Vox Ecclesiae.">
+<title>Jornal Brasil Central — Vox Ecclesiae</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-banner"><img src="../assets/banner_vox_ecclesiae.png" alt="Vox Ecclesiae"></header>
+<nav class="topnav"><a class="home-link" href="../index.html">⌂</a><a href="../index.html">Início</a><a href="../jornais.html">Jornais</a><a href="../colecoes.html">Coleções</a><a href="../como-pesquisar.html">Como pesquisar</a><a href="../como-citar.html">Como citar</a><a href="../sobre.html">Sobre</a><a href="../contato.html">Contato</a></nav>
+<main class="page-shell">
   <div class="section-title"><span class="orn">◇</span><h1>Jornal Brasil Central</h1><span class="orn">◇</span></div>
-  <div class="panel construction-panel">
+  <div class="panel">
     <img src="../assets/mastheads/brasil-central.png" alt="Jornal Brasil Central" style="width:100%;max-height:190px;object-fit:cover;border:1px solid #b58b50">
-    <div class="construction-message" role="status" aria-label="Coleção em construção">
-      <span class="status-pill">OPUS IN FIERI</span>
-      <h2>Acervo em construção</h2>
-      <p>A coleção do Jornal Brasil Central está sendo preparada para incorporação ao Vox Ecclesiae.</p>
-      <p>Os anos, edições, páginas digitalizadas e recursos de pesquisa serão disponibilizados aqui conforme a catalogação documental avançar.</p>
-    </div>
-    <div class="callout"><strong>Preservação documental:</strong> períodos, datas e números de edição só serão publicados após conferência dos exemplares originais.</div>
-    <div class="action-row"><a class="action alt" href="../index.html">Voltar à página inicial</a><a class="action alt" href="../jornais.html">Ver todos os jornais</a></div>
+    <p class="lead">Edições identificadas e tratadas documentalmente no projeto Vox Ecclesiae. Datas, números e composição dos exemplares são publicados somente quando sustentados pelas fotografias do acervo.</p>
+    <div class="callout"><strong>Nota documental:</strong> campos marcados como pendentes foram preservados dessa forma porque o dado não pôde ser lido com segurança. Edições parciais correspondem apenas ao material documental efetivamente disponível.</div>
   </div>
+
+  <div class="panel">
+    <h2>Consultar edições</h2>
+    <div class="advanced-box">
+      <label>Ano civil
+        <select id="jbcYear"><option value="">Todos os anos</option></select>
+      </label>
+      <label>Situação documental
+        <select id="jbcStatus">
+          <option value="">Todas</option>
+          <option value="Concluido">Concluídas</option>
+          <option value="Parcial">Parciais</option>
+        </select>
+      </label>
+    </div>
+    <div class="search-zone" style="margin-top:1rem">
+      <div class="search-form" style="grid-template-columns:1fr">
+        <input id="jbcQuery" type="search" placeholder="Pesquisar por data, número ou identificador" aria-label="Pesquisar no catálogo do Jornal Brasil Central">
+      </div>
+    </div>
+  </div>
+
+  <div id="jbcStats" class="archive-stats"></div>
+  <div id="jbcLoadStatus" class="search-status">Carregando catálogo...</div>
+  <section id="jbcEditionGrid" class="edition-grid" aria-live="polite"></section>
+
+  <div class="callout"><strong>Arquivos digitais:</strong> o catálogo já está publicado, mas os botões de PDF pesquisável, PDF visual, TXT e JSON só aparecem quando o respectivo arquivo tiver um endereço verificado no acervo público. Nenhum link é criado por inferência.</div>
 </main>
-<footer><div class="footer-inner"><div class="footer-title"><strong>VOX ECCLESIAE</strong><small>Hemeroteca Digital da Imprensa Católica de Goiás</small></div><div class="footer-logo"><img src="../assets/laprem/laprem-logo-horizontal.png" alt="LAPREM"></div><div class="footer-contacts"><a href="https://www.lapremueg.com/">◉ www.lapremueg.com</a><a href="mailto:laprem.ppghis@ueg.br">✉ laprem.ppghis@ueg.br</a><a href="https://www.instagram.com/laprem.ueg/">◎ @laprem.ueg</a></div><div class="footer-copy">© 2026 LAPREM</div></div></footer><script src="../assets/app.js"></script></body></html>
+<footer><div class="footer-inner"><div class="footer-title"><strong>VOX ECCLESIAE</strong><small>Hemeroteca Digital da Imprensa Católica de Goiás</small></div><div class="footer-logo"><img src="../assets/laprem/laprem-logo-horizontal.png" alt="LAPREM"></div><div class="footer-contacts"><a href="https://www.lapremueg.com/">◉ www.lapremueg.com</a><a href="mailto:laprem.ppghis@ueg.br">✉ laprem.ppghis@ueg.br</a><a href="https://www.instagram.com/laprem.ueg/">◎ @laprem.ueg</a></div><div class="footer-copy">© 2026 LAPREM</div></div></footer>
+<script src="../assets/app.js"></script>
+<script src="../assets/brasil-central.js"></script>
+</body>
+</html>
